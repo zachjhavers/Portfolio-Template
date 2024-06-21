@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zachary Havers</title>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DE+Grund:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Adding Styles-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/ba604611a1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header><span class="openbtn" onclick="openNav()">☰</span></header>
+    <div class="background-overlay"></div>
+    <section class="content">
+      <h1>
+        Zachary Havers <br />
+        Web Design & Development
+      </h1>
+      <div class="socialLinks">
+        <a href="https://github.com/zachjhavers" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/zachjhavers" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:youremail@example.com" target="_blank">
+          <i class="far fa-envelope"></i>
+        </a>
+      </div>
+    </section>
+    <section id="about" class="animation">
+      <h1>About Me</h1>
+      <p>
+        I am a graduate of software engineering technology, proficient in both
+        front-end and back-end technologies. With my knowledge in full-stack web
+        development, I aim to create elegant, modern, and simple designs that
+        stand the test of time.
+      </p>
+      <p>
+        My journey in web development began with a passion for creating
+        user-friendly interfaces and seamless user experiences. I have hands-on
+        experience in developing responsive web applications and websites using
+        technologies such as HTML, CSS, JavaScript, React, Node.js, and MongoDB.
+      </p>
+      <p>
+        I believe in continuous learning and staying updated with the latest
+        technologies and trends in the industry. I am always excited to take on
+        new challenges and projects that allow me to expand my skills and
+        contribute to innovative solutions.
+      </p>
+    </section>
+    <section id="services" class="animation">
+      <h1>Services</h1>
+      <h2>Consultation</h2>
+      <p>
+        Before starting any project, I offer a consultation to understand your
+        goals and requirements. This helps me tailor the design and development
+        process to meet your specific needs.
+      </p>
+      <h2>Design</h2>
+      <p>
+        I provide professional web design services, creating modern, responsive,
+        and user-friendly designs that reflect your brand identity and engage
+        your audience.
+      </p>
+      <h2>Development</h2>
+      <p>
+        My web development services cover both front-end and back-end
+        development, ensuring that your website not only looks great but also
+        functions smoothly and efficiently.
+      </p>
+      <h2>Maintenance and Support</h2>
+      <p>
+        After the project is complete, I offer maintenance and support services
+        to help you keep your website up-to-date and running smoothly. Whether
+        you need regular updates, troubleshooting, or enhancements, I've got you
+        covered.
+      </p>
+    </section>
+    <section id="clients" class="animation">
+      <h1>Clients</h1>
+      <p>Coming Soon...</p>
+    </section>
+    <section id="contact" class="animation">
+      <h1>Contact</h1>
+      <div class="container">
+        <form action="action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" />
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" />
+
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" />
+
+          <label for="subject">Subject</label>
+          <textarea
+            id="subject"
+            name="subject"
+            style="height: 200px"
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2024 Zachary Havers. All rights reserved.</p>
+    </footer>
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
