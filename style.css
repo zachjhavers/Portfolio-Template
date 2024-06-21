@@ -25,6 +25,7 @@ footer {
   margin: 5%;
   text-align: center;
   font-size: 1.5rem;
+  background-color: white;
 }
 
 /* Background Overlay */
@@ -144,6 +145,7 @@ input[type="submit"] {
   cursor: pointer;
   font-family: "Playfair Display", "sans-serif";
   font-size: 1.2rem;
+  width: 100%;
 }
 
 input[type="submit"]:hover {
@@ -238,41 +240,101 @@ input[type="submit"]:hover {
   }
 }
 
-/* Responsiveness */
+/* General styles for responsiveness */
+
+/* Styles for screens up to 800px width */
 @media (max-width: 800px) {
   .socialLinks {
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
   h1 {
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
   footer {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
   #about,
   #services,
   #clients {
     padding: 10%;
+    margin-bottom: 40px; /* Ensure margin-bottom is consistent */
   }
 
   #about h1,
   #services h1,
   #clients h1 {
     font-size: 1.5rem;
+    margin-bottom: 20px; /* Ensure margin-bottom is consistent */
   }
 
   #about p,
   #services p,
   #clients p {
     font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
   }
 
   #services h2,
   #clients h2 {
     font-size: 1.25rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 }
 
+/* Styles for screens up to 480px width (and specific adjustments) */
+@media (max-width: 480px) {
+  #about,
+  #services,
+  #clients {
+    padding: 5%;
+    margin-bottom: 40px; /* Consistent margin-bottom */
+  }
+
+  #about h1,
+  #services h1,
+  #clients h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px; /* Consistent margin-bottom */
+  }
+
+  #about p,
+  #services p,
+  #clients p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+
+  #services h2,
+  #clients h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  /* Contact Form adjustments for smaller screens */
+  input[type="text"],
+  select,
+  textarea {
+    font-size: 1rem;
+    padding: 10px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+  }
+
+  input[type="submit"] {
+    font-size: 1rem;
+    padding: 10px 16px;
+  }
+
+  .container {
+    padding: 30px;
+  }
+}
+
+/* Additional specific media queries as needed */
 @media screen and (max-height: 450px) {
   .overlay a {
     font-size: 20px;
@@ -295,36 +357,5 @@ input[type="submit"]:hover {
 @media (min-width: 768px) {
   section {
     height: 100vh;
-  }
-}
-
-@media (max-width: 480px) {
-  #about,
-  #services,
-  #clients {
-    padding: 5%;
-    margin-bottom: 40px;
-  }
-
-  #about h1,
-  #services h1,
-  #clients h1 {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-  }
-
-  #about p,
-  #services p,
-  #clients p {
-    font-size: 0.8rem;
-    line-height: 1.4;
-    margin-bottom: 10px;
-  }
-
-  #services h2,
-  #clients h2 {
-    font-size: 1rem;
-    margin-top: 20px;
-    margin-bottom: 10px;
   }
 }
