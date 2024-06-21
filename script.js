@@ -1,15 +1,16 @@
-/* Open when someone clicks on the span element */
+// Open the navigation overlay
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
   document.querySelector(".openbtn").classList.add("hidden");
 }
 
-/* Close when someone clicks on the "x" symbol inside the overlay */
+// Close the navigation overlay
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
   document.querySelector(".openbtn").classList.remove("hidden");
 }
 
+// Add event listeners to close the overlay when a menu item is clicked
 document.addEventListener("DOMContentLoaded", function () {
   const menuItems = document.querySelectorAll(".overlay-content a");
 
@@ -23,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const overlay = document.querySelector(".background-overlay");
   overlay.style.backgroundColor = "rgba(255, 255, 255, 0)";
 
-  // IntersectionObserver for animations
+  // IntersectionObserver for animations and adjusting background overlay opacity
   const the_animation = document.querySelectorAll(".animation");
 
   const observer = new IntersectionObserver(
@@ -41,9 +42,9 @@ document.addEventListener("DOMContentLoaded", function () {
     { threshold: 0.1 }
   );
 
+  // Observe elements for animations
   for (let i = 0; i < the_animation.length; i++) {
     const elements = the_animation[i];
-
     observer.observe(elements);
   }
 });

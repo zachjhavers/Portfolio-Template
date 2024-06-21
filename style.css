@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
   font-family: "Playfair Display", "sans-serif";
   color: #042940;
@@ -26,6 +27,7 @@ footer {
   font-size: 1.5rem;
 }
 
+/* Background Overlay */
 .background-overlay {
   position: fixed;
   top: 0;
@@ -36,6 +38,7 @@ footer {
   z-index: -1;
   transition: background-color 0.5s ease;
 }
+
 /* About Me, Services, and Clients Sections */
 #about,
 #services,
@@ -64,16 +67,14 @@ footer {
 
 #services h2,
 #clients h2 {
+  width: 100%;
   text-align: left;
   font-size: 1.8rem;
   margin-top: 30px;
   margin-bottom: 15px;
 }
 
-/*
-* Style For Section Animations
-*/
-
+/* Section Animations */
 section {
   display: flex;
   flex-direction: column;
@@ -97,10 +98,7 @@ section {
   transition: opacity 0.7s ease-out, transform 0.7s ease-out;
 }
 
-/*
-* Styling For Social Links
-*/
-
+/* Social Links */
 .socialLinks {
   display: flex;
   flex-direction: row;
@@ -122,10 +120,7 @@ section {
   color: #d8b08c;
 }
 
-/*
-* Styling For Contact Form
-*/
-
+/* Contact Form */
 input[type="text"],
 select,
 textarea {
@@ -159,16 +154,13 @@ input[type="submit"]:hover {
 .container {
   text-align: left;
   padding: 50px;
-  background-color: transparent; /* Completely transparent background */
+  background-color: transparent;
   border-radius: 25px;
   margin-bottom: 20px;
   font-size: 1.2rem;
 }
 
-/*
-* Styling For The Menu
-*/
-
+/* Menu */
 .openbtn {
   position: fixed;
   top: 20px;
@@ -236,10 +228,7 @@ input[type="submit"]:hover {
   font-size: 60px;
 }
 
-/*
-* Animations
-*/
-
+/* Animations */
 @keyframes fadeIn {
   from {
     opacity: 0%;
@@ -249,10 +238,7 @@ input[type="submit"]:hover {
   }
 }
 
-/*
-* Responsiveness
-*/
-
+/* Responsiveness */
 @media (max-width: 800px) {
   .socialLinks {
     font-size: 1.5rem;
@@ -317,7 +303,7 @@ input[type="submit"]:hover {
   #services,
   #clients {
     padding: 5%;
-    margin-bottom: 40px; /* Increase margin-bottom for more space */
+    margin-bottom: 40px;
   }
 
   #about h1,
